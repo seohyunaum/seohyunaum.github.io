@@ -1,0 +1,98 @@
+@font-face {
+    font-family: raleway;
+    src: url(Raleway-VariableFont_wght.ttf);
+}
+
+.animated-gradient {
+    font-size: 50px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-animation: gradient 8s ease infinite;
+    -moz-animation: gradient 8s ease infinite;
+    animation: gradient 8s ease infinite;
+  }
+
+a:link, a:visited { 
+    text-decoration: none; 
+    color: black;
+} 
+
+h5 {
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+ul {
+    margin: 5px;
+    list-style-type: square;
+}
+
+
+body {
+    font-family:raleway;
+}
+
+
+.name {
+    font-size: 100px;
+    animation-name: example;
+}
+
+.pages {
+    font-size: 40px;
+    transition: 0.7s;
+}
+
+.pages:hover {
+    font-size: 60px;
+    color: pink;
+}
+
+.center {
+    border: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    gap: 30px;
+  }
+  
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@-moz-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

@@ -1,11 +1,6 @@
 @font-face {
-    font-family: raleway;
-    src: url(Raleway-VariableFont_wght.ttf);
-}
-
-@font-face {
-    font-family: golos;
-    src: url(GolosText-VariableFont_wght.ttf);
+    font-family: inter;
+    src: url(Inter-VariableFont_slnt,wght.ttf);
 }
 
 .center {
@@ -55,7 +50,7 @@ ul {
 }
 
 body {
-    font-family:golos;
+    font-family: inter;
 }
 
 .pageTitle {
@@ -97,7 +92,7 @@ body {
 }
 
 .linkContainer {
-    font-family: golos;
+    font-family: inter;
     display:flex;
     flex-direction: row;
     justify-content: right;
@@ -151,7 +146,7 @@ footer {
 }
 
 .horizontalContainer {
-    font-family: golos;
+    font-family: inter;
     display:flex;
     flex-direction: row;
     justify-content: center;

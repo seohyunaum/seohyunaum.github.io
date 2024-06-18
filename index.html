@@ -1,18 +1,125 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
-    <link rel = "icon" type = "image/png" href = "favicon.png">
+    <link rel = "icon" type = "image/png" href = "images/favicon.png">
 </head>
 <body>
-    <!-- name -->
-    <div class="center animated-gradient">
-        <h1 class = "name"><b>Seo Hyun Aum</b></h1>
-    </div>
-    <!-- pages -->
-    <div class="center">
-        <div class="pages"><a class= "pages" href = "projects.html">projects</a></div>
-        <div class="pages"><a class= "pages" href = "resume.html">resumé</a></div>
-        <div class="pages"><a class= "pages" href = "aboutme.html">about me</a></div>
-        <div class="pages"><a class= "pages" href = "contactme.html">contact me</a></div>
+    <div class="big-box">
+        <div class="left-panel" style="justify-content: center;">
+            <div class="center-items">
+                <img src="images/image.png" class="circular-image">
+                <div class = "animated-gradient" style="font-size: 45px;"><b>Seo Hyun Aum</b></div>
+                <div style="font-size: 20px; text-align: center; width: 60%;">Hey there! Welcome to my portfolio. Feel free to look around my projects, CV, and contact me if you have any questions!</div>
+                <div>
+                    <div class="linkContainer">
+                        <a class = "fancyLink"  href = https://www.linkedin.com/in/seo-hyun-aum-6b6b45220/>LinkedIn &#8599;</a>
+                        <a class = "fancyLink" href = https://www.instagram.com/sindyaum/>Instagram &#8599;</a>
+                        <a class = "fancyLink" href = https://medium.com/@seohyun.aum/>Personal Blog &#8599;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="page-tabs">
+                <div class="expandable-div"> <!-- projects-->
+                    <div class="header"> 
+                        <span class="icon">&#8250;</span> projects
+                    </div>
+                    <div class="content">
+                        <h5>Anti Scam Website Detection &#129302;</h5>
+                        <ul>
+                            <li>Designed a supervised learning model for fraudulent website detection, using tree based feature selection and the random forest algorithm for training</li>
+                            <li>Utilized Python and relevant libraries (e.g., scikit-learn, pandas, numpy) to build and train the Random Forest model.</li>
+                            <li>Improved algorithm by testing feature selection techniques and reduced underfitting, leading to over 40% increase in accuracy
+                            </li>
+                        </ul>
+                        <div class="linkContainer">
+                            <a class = "fancyLink"  href = https://seohyunaum.com/cs4641projectpage>Website	&#8599;</a>
+                            <a class = "fancyLink" href = https://seohyunaum.com/cs4641projectpage/sc_page.html>Code &#8599;</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h5>Plantomo &#127793;</h5>
+                        <ul>
+                            <li>Developed an iOS Unity game focused on educating children on local plants as a part of GDSC 2023.</li>
+                            <li>Designed and implemented game features to enhance the educational value and fun of the game.</li>
+                            <li>Scripted basic features in C# along with four team members to implement basic game features and tasks.</li>
+                            <li>Skills: Unity game development, scripting, animation, UI/UX design</li>
+                        </ul>
+                        <div class="linkContainer">
+                            <a class = "fancyLink" href = https://github.com/Andrew920528/GDSC2023>Github &#8599;</a>
+                            <a class = "fancyLink" href = https://youtu.be/8LHcoZL0cPo>Youtube &#8599;</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h5>MatDeepLearn &#127781;</h5>
+                        <ul>
+                            <li>Visualized and interpreted graph neural network embeddings to improve understanding of MatDeepLearn.</li>
+                            <li>Researched relevant ML architectures, training methods, and datasets to improve accuracy and reduce costs.</li>
+                            <li>Trained graph neural network prototypes to be utilized for inverse design.</li>
+                        </ul>
+                        <div class="linkContainer">
+                            <a class = "fancyLink" href = https://github.com/Fung-Lab/MatDeepLearn/tree/main/matdeeplearn>Github &#8599;</a>
+                            <a class = "fancyLink" href = https://repeated-spoonbill-b8a.notion.site/VIP-Accelerating-Material-Science-with-AI-b52a904ea79e4036b53b2e64cbcd723e>Documentation &#8599;</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h5>Restaurant Supply Express! Drone Delivery &#127836;</h5>
+                        <ul>
+                            <li>Developed an object-oriented program in Java and SQL database modeling a restaurant supply application powered with drones leading a team of 4.</li>
+                            <li>Constructed enhanced entity–relationship model, domain class, design class, sequence, and use case diagrams.</li>
+                            <li>Applied SOLID and GRASP design principles and query writing skills to maximize efficiency.</li>
+                        </ul>
+                        <div class="linkContainer">
+                            <a class = "fancyLink" href = https://drive.google.com/drive/folders/1PmYXiGz9Q-qFf2NjGJspu2vzKNNPw_ss?usp=sharing>Files &#8599;</a>
+                            <a class = "fancyLink" href = https://drive.google.com/file/d/1YTLvtTYQn0gjfPDw7xadSFe85qDxsH4Y/view?usp=share_link>Overview &#8599;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="expandable-div"> <!-- CV-->
+                    <div class="header"> 
+                        <span class="icon">&#8250;</span> curriculum vitae
+                    </div>
+                    <div class="content">
+                        <object data="resume.pdf" type="application/pdf" width="80%" height="500px">
+                            <p>Unable to display PDF file. <a href="https://drive.google.com/file/d/1i06Qn7hJN7xzqlmftlWtfW7z0xj0_bvd/view?usp=share_link">Download</a> instead.</p>
+                        </object>
+                    </div>
+                </div>
+                <div class="expandable-div"> <!-- about me-->
+                    <div class="header"> 
+                        <span class="icon">&#8250;</span> about me
+                    </div>
+                    <div class="content">
+                        This section is coming soon :)
+                    </div>
+                </div>
+                <div class="expandable-div"> <!-- contact me-->
+                    <div class="header"> 
+                        <span class="icon">&#8250;</span> contact me
+                    </div>
+                    <div class="content">
+                        <div class = "center">
+                            <div class="bigFancyLink"><a href = "mailto: saum3@gatech.edu">Email &#128233;</a></div>
+                            <div class="bigFancyLink"><a href = "https://www.linkedin.com/in/seo-hyun-aum-6b6b45220/">LinkedIn &#129361;</a></div>
+                            <div class="bigFancyLink"><a href = https://app.joinhandshake.com/stu/users/43155980>Handshake &#128075;</a></div>
+                            <div class="bigFancyLink"><a href = "https://www.instagram.com/sindyaum.02/">Instagram &#127793;</a></div>
+                            <div class="bigFancyLink"><a href = "mailto: I love pigeons ruuuuu">Pigeon &#128330;</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var headers = document.querySelectorAll('.expandable-div .header');
+        headers.forEach(function(header) {
+            header.addEventListener('click', function() {
+                this.parentElement.classList.toggle('open');
+                console.log('Toggled open class on:', this.parentElement);
+            });
+        });
+    });
+</script>

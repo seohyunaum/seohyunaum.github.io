@@ -1,6 +1,137 @@
 @font-face {
-    font-family: raleway;
-    src: url(Raleway-VariableFont_wght.ttf);
+    font-family: inter;
+    src: url(Inter-VariableFont_slnt,wght.ttf);
+}
+
+.circular-image {
+    width: 25vw;        /* 33% of the viewport width */
+    height: 25vw;       /* Same as width to maintain aspect ratio */
+    border-radius: 50%; /* Rounds the corners to create a circle */
+    object-fit: cover;  /* Ensures the image covers the space without stretching */
+}
+
+.big-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%; 
+}
+
+.left-panel {
+    flex: 0 1 40%;
+    display:flex;
+    align-items: center;
+    text-align: center;
+}
+
+.right-panel {
+    flex: 0 1 60%;
+    height: auto;
+    overflow: auto;
+    display:flex;
+    align-items: center;
+    text-align: center;
+}
+
+.center-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    border: 5px;
+    gap: 30px;
+  }
+
+.page-tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 30px;
+}
+
+.expandable-div {
+    overflow: auto;
+}
+
+.expandable-div .header {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+.expandable-div .icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.expandable-div .header:hover {
+    font-size: 45px;
+    color: pink;
+}
+
+.expandable-div .content {
+    font-size: 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out; /* Transition for padding too */
+    padding: 0 10px; /* Padding transitions to zero */
+}
+
+.expandable-div.open .content{
+    max-height: 500px; /* Adjust based on the maximum expected content height */
+    padding: 10px; /* Ensure padding is added back when expanded */
+}
+
+.expandable-div.open .icon {
+    transform: rotate(90deg); /* Rotates the icon 90 degrees */
+}
+
+.linkContainer {
+    font-family: inter;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.fancyLink {
+    font-size: 15px;
+    margin: 10px;
+}
+
+.fancyLink:hover {
+    color:#ee7752;
+}
+
+.horizontalContainer {
+    font-family: inter;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:baseline;
+    column-gap: 10px;
+}
+
+.sindy {
+    font-size: 65px;
+    transition: 0.4s;
+}
+
+.sindy:hover {
+    font-size: 85px;
+}
+
+.bigFancyLink {
+    font-size: 30px;
+    transition: 0.4s;
+}
+
+.bigFancyLink:hover {
+    color:#ee7752;
+    font-size: 40px;
 }
 
 .animated-gradient {
@@ -21,9 +152,9 @@ a:link, a:visited {
 } 
 
 h5 {
-    font-size: 20px;
+    font-size: 17px;
     margin: 0;
-    text-align: center;
+    text-align: left;
 }
 
 ul {
@@ -33,7 +164,7 @@ ul {
 
 
 body {
-    font-family:raleway;
+    font-family:inter;
 }
 
 
@@ -42,24 +173,9 @@ body {
     animation-name: example;
 }
 
-.pages {
-    font-size: 40px;
-    transition: 0.7s;
-}
 
-.pages:hover {
-    font-size: 60px;
-    color: pink;
-}
 
-.center {
-    border: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction:column;
-    gap: 30px;
-  }
+
   
 @-webkit-keyframes gradient {
     0% {

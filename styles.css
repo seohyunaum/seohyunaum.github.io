@@ -151,6 +151,10 @@ a:link, a:visited {
     color: black;
 } 
 
+a:hover {
+    color:#ee7752;
+}
+
 h5 {
     font-size: 17px;
     margin: 0;
